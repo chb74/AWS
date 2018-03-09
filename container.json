@@ -1,0 +1,18 @@
+[
+  {
+    "Description": "First disk",
+    "Format": "vmdk",
+    "UserBucket": {
+        "S3Bucket": "my-bucket-import",
+        "S3Key": "disk1.vmdk"
+    }
+  },
+  {
+    "Description": "Second disk",
+    "Format": "vmdk",
+    "UserBucket": {
+        "S3Bucket": "my-bucket-import",
+        "S3Key": "disk2.vmdk"
+    }
+  }
+]
