@@ -20,6 +20,6 @@ mv $CloudConfig $CloudConfig.old
 mv $SshConfig $SshConfig.old 
 
 sed 's/ssh_pwauth: false/ssh_pwauth: true/' $CloudConfig.old > $CloudConfig 
-sed -e 's/^Permit/#Permit/' -e 's/PasswordAuthentication no/PasswordAuthentication yes/' $SshConfig.old > $SshConfig 
+sed -e 's/^Permit/#Permit/' -e 's/#PermitRootLogin yes/PermitRootLogin yes/' -e 's/PasswordAuthentication no/PasswordAuthentication yes/' $SshConfig.old > $SshConfig
  
 $SshDaemon restart 
