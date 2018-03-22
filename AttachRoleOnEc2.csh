@@ -6,7 +6,6 @@
 set Region = 'ap-northeast-2'
 set Profile = 'default'
 set RoleName = 'Ec2Role' 
-
 set Insts = ( `aws ec2 describe-instances --region $Region --profile $Profile  | jq -r '.Reservations[].Instances[].InstanceId'`)
 
 foreach i ( $Insts )
