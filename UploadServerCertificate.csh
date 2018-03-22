@@ -18,7 +18,8 @@ aws iam upload-server-certificate \
     --private-key file://$PrivateKey \
     --certificate-chain file://$ChainKey \
     --path /cloudfront/$CertificateName/  \
+    --region $Region \
     --profile $Profile
 
 # -- Lists the server certificates stored in IAM that have the specified path prefix -- # 
-aws iam list-server-certificates --profile $Profile --region $Region
+aws iam list-server-certificates --region $Region --profile $Profile 
