@@ -22,7 +22,7 @@ cd $SourceDir
 tar czfp $SourceName *
 
 # -- Uploading the Package -- #
-aws s3 rm $S3Location/$SourceName --profile $Profile
+aws s3 rm $S3Location/$SourceName --region $Region --profile $Profile
 aws s3 cp $SourceDir/$SourceName $S3Location/$SourceName --region $Region --profile $Profile
 
 # -- CodeDeploy Source Code Package -- #
