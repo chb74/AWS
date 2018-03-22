@@ -10,6 +10,8 @@ set Count = 1
 set Class = 't2.medium'
 set Key = 'xxxxxx'
 set UserData = 'UserData.txt'
+set Profile = 'default'
+set Region = 'ap-northeast-2'
 
 # -- Run a Instance -- # 
 aws ec2 run-instances \
@@ -20,4 +22,6 @@ aws ec2 run-instances \
     --security-group-ids $SG \
     --subnet-id $SN \
     --associate-public-ip-address \
-    --user-data file://$UserData
+    --user-data file://$UserData \
+    --region $Region \
+    --profile $Profile 
