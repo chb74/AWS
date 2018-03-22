@@ -5,6 +5,8 @@
 
 # --
 set Instances = ( lounge lounge2 audio mystory )
+set Profile = 'default'
+set Region = 'ap-northeast-2'
 
 set Ports = ( 1 2 3 4 5 )
 # -- Make a List for Directory -- #
@@ -39,7 +41,8 @@ foreach Inst ($Instances);
         sed "s/PORT/$Ports[$count]/" $ValidateService > $DestinationPath/$Inst/ValidateService
 
         tar czfp ../All/$Inst.tgz *
-        aws s3 cp ../All/$Inst.tgz s3://qas-bookclub-codedeploy/Developer/$Inst/
+        aws s3 cp ../All/$Inst.tgz s3://qas-bookclub-codedeploy/Developer/$Inst/ \
+            --region $Region --profile $Profile
 
         if ( $count == 1) then
                 exit;
