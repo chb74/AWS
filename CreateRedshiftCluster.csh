@@ -8,7 +8,7 @@ set Region = 'ap-northeast-2'
 set Class = 'dc1.large'
 set Nodes = 2
 set User = 'admin'
-set Pass = 'Admin3355'
+set Pass = 'AdminXXXXXX'
 set ClusterId = 'mzcluster'
 
 aws redshift create-cluster --node-type $Class --number-of-nodes $Nodes \
