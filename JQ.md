@@ -2,7 +2,7 @@
 
 #SYNOPSIS
        jq [options...] filter [files...]
-
+       ```
        jq  can  transform  JSON  in  various  ways,  by  selecting, iterating,
        reducing and otherwise mangling JSON documents. For  instance,  running
        the  command  jq ´map(.price) | add´ will take an array of JSON objects
@@ -17,7 +17,7 @@
        The options are described in  the  INVOKING  JQ  section;  they  mostly
        concern  input  and  output formatting. The filter is written in the jq
        language and specifies how to transform the input file or document.
-
+       ```
 #FILTERS
        A jq program is a "filter": it takes an input, and produces an  output.
        There are a lot of builtin filters for extracting a particular field of
