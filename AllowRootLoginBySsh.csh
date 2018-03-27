@@ -7,10 +7,10 @@ set CloudConfig = '/etc/cloud/cloud.cfg.d/00_defaults.cfg'
 set SshConfig = '/etc/ssh/sshd_config' 
 set Date = `date '+%Y%m%d-%H%M%S'`
 set SshDaemon = '/etc/init.d/sshd' 
-
+set LocalTimeZone = 'Asia/Seoul'
 
 rm -f /etc/localtime 
-ln -s /usr/share/zoneinfo/Asia/Seoul  /etc/localtime 
+ln -s /usr/share/zoneinfo/$LocalTimeZone /etc/localtime
 
 # -- Setup SSH -- # 
 rm -f $CloudConfig.old 
