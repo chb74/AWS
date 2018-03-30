@@ -5,14 +5,14 @@
 
 set Profile = 'default'
 set Region = 'ap-northeast-2'
-set ExcludeSecurityGroup = 'sg-876c8bed'
+set SecurityGroup = 'sg-876c8bed'
 set Log = `pwd`/'describe-ec2-summary.log'
 
 foreach i ( `aws ec2 describe-instances --profile $Profile --region $Region | jq -r '.Reservations[].Instances[].InstanceId'` )
     set SecurityGroups = `aws ec2 describe-instances --instance-id $i --profile $Profile --region $Region | jq -r '.Reservations[].Instances[].SecurityGroups[].GroupId'`
 
     # -- Add a New Security Group --# 
-    set NewSecurityGroups = "$SecurityGroups $ExcludeSecurityGroup"
+    set NewSecurityGroups = "$SecurityGroups $SecurityGroup"
 
     # -- Update a Security Groups of Ec2 Instance -- # 
     echo $i " ["$NewSecurityGroups"]"
