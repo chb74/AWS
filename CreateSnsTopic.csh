@@ -3,11 +3,11 @@
 # -- By chb@mz.co.kr -- #
 # -- On Apr 14, 2018 -- #
 
-set TopicName = 'MegazoneAlarm'
+set TopicName = 'Alarm'
 set Region = 'ap-northeast-2'
 set Profile = 'default'
 set Protocol = 'email'
-set Subscribe = ( chb@mz.co.kr liverpools@gmail.com )
+set Subscribe = ( mail@mail.com mail2@mail.com  )
 
 # -- Create a new Topic -- #
 set TopicArn = `aws sns create-topic --name $TopicName  --profile $Profile --region $Region | jq -r '.TopicArn'`
