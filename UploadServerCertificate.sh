@@ -13,5 +13,4 @@ fi
 aws iam upload-server-certificate --server-certificate-name $DomainName \
 	--certificate-body file:///tmp/$DomainName.crt --private-key file:///tmp/$DomainName-NoPass.key \
 	--certificate-chain file:///tmp/CA_ROOT.crt --path /cloudfront/$DomainName/
-
 # -- End of Line -- # 
