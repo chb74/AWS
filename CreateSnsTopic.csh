@@ -9,6 +9,9 @@ set Profile = 'default'
 set Protocol = 'email'
 set Subscribe = ( mail@mail.com mail2@mail.com  )
 
+# -- Get Topic List -- #
+aws sns list-topics --profile $Profile --region $Region | jq -r '.Topics[].TopicArn'
+
 # -- Create a new Topic -- #
 set TopicArn = `aws sns create-topic --name $TopicName  --profile $Profile --region $Region | jq -r '.TopicArn'`
 
