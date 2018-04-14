@@ -10,6 +10,6 @@ set Profile = 'default'
 
 # -- Create tags for multiple instances -- # 
 foreach inst ( `aws ec2 describe-instances --profile $Profile --region $Region | jq -r '.Reservations[].Instances[].InstanceId'` )
-    echo $inst
+    echo InstanceId : $inst
     aws ec2 create-tags --resources $inst --tags Key=$Key,Value=$Value
 end
