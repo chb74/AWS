@@ -1,0 +1,7 @@
+#!/bin/csh
+
+# -- By chb@mz.co.kr -- #
+# -- On Apr 15, 2018 -- #
+
+set Profile = 'default'
+set Region = 'ap-northeast-2'
