@@ -11,5 +11,6 @@ set Profile = 'default'
 # -- Create tags for multiple instances -- # 
 foreach inst ( `aws ec2 describe-instances --profile $Profile --region $Region | jq -r '.Reservations[].Instances[].InstanceId'` )
     echo InstanceId : $inst
-    aws ec2 delete-tags --resources $inst --tags Key=$Key,Value=$Value
+    # -- aws ec2 delete-tags --resources $inst --tags Key=$Key,Value=$Value
+    aws ec2 delete-tags --resources $inst --tags Key=$Key
 end
