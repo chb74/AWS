@@ -14,5 +14,6 @@ set TopicArn = `aws sns create-topic --name $TopicName  --profile $Profile --reg
 
 # -- Create a new Subscribe -- #
 foreach sub ( $Subscribe )
-    set Subscription = `aws sns subscribe --topic-arn $TopicArn --protocol $Protocol --notification-endpoint $sub --profile $Profile --region $Region | jq '.SubscriptionArn'`
+    set Subscription = `aws sns subscribe --topic-arn $TopicArn --protocol $Protocol \
+        --notification-endpoint $sub --profile $Profile --region $Region | jq '.SubscriptionArn'`
 end
