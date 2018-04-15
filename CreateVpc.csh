@@ -3,10 +3,10 @@
 # -- By chb@mz.co.kr -- # 
 # -- On Feb 10, 2018 -- # 
 
+source Libs 
+
 set Vpcs = ( MzVpc 10.100.0.0/16 )
 set Vpc = `aws ec2 create-vpc --cidr-block $Vpcs[2]`
-set Profile = 'default'
-set Region = 'ap-northeast-2'
 
 if ( -e $Vpcs[1].json ) then 
 	rm -f $Vpcs[1].json 
