@@ -3,9 +3,9 @@
 # -- By chb@mz.co.kr -- #
 # -- On Apr 14, 2018 -- #
 
+source Libs 
+
 set TopicName = 'Alarm'
-set Region = 'ap-northeast-2'
-set Profile = 'default'
 set Protocol = 'email'
 set Subscribe = ( mail@mail.com mail2@mail.com  )
 
