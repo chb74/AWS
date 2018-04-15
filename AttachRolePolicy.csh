@@ -3,8 +3,8 @@
 # -- By chb@mz.co.kr -- #
 # -- On Apr 15, 2018 -- #
 
-set Region = 'ap-northeast-2'
-set Profile = 'default'
+source Libs 
+
 set PolicyArn = 'aa'
 set RoleName = 'MzRole'
 
