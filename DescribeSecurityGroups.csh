@@ -1,7 +1,7 @@
 #!/bin/tcsh
 
-# --
-# --
+# -- By chb@mz.co.kr -- #
+# -- On Apr 15, 2018 -- #
 
 source Libs
 
