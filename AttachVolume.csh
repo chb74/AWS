@@ -3,10 +3,9 @@
 # -- By chb@mz.co.kr -- # 
 # -- On Mar 08, 2018 -- # 
 
-set Zone = 'a' 
-set Profile = 'default'
-set Region = 'ap-northeast-2'
+source Libs 
 
+set Zone = 'a' 
 set Size = 30
 set VolumeType = 'gp2'
 set Device = '/dev/xvdf'
@@ -19,4 +18,4 @@ sleep 5
 set AttachVolume = `aws ec2 attach-volume --device $Device --instance-id $InstanceId \
   --volume-id $VolumeId --region $Region --profile $Profile`
 
-echo $AttachVolume                   
+echo $AttachVolume
