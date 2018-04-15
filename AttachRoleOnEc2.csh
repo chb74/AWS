@@ -3,8 +3,8 @@
 # -- By chb@mz.co.kr -- # 
 # -- On,In,At Mar 01, 2018 -- # 
 
-set Region = 'ap-northeast-2'
-set Profile = 'default'
+source Libs 
+
 set RoleName = 'Ec2Role' 
 set Insts = ( `aws ec2 describe-instances --region $Region --profile $Profile  | jq -r '.Reservations[].Instances[].InstanceId'`)
 
