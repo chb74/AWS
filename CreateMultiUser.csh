@@ -3,9 +3,9 @@
 # -- By chb@mz.co.kr -- # 
 # -- On Mar 01, 2018 -- # 
 
+source Libs 
+
 set Users = ( Auser Buser Cuser Duser )
-set Profile = 'default'
-set Region = 'ap-northeast-2'
 set Group = 'Developer'
 set TargetBucket = 'myTarget'
 set count = 1
