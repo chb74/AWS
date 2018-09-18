@@ -1,6 +1,6 @@
-#!/bin/tcsh 
+#!/bin/csh 
 
-# -- By chb@mz.co.kr -- # 
+# -- By liverpools@gmail.com -- # 
 # -- On Jan 24, 2018 -- # 
 
 set Region = 'ap-northeast-2'
