@@ -1,6 +1,6 @@
 #!/bin/csh
 
-# -- By chb@mz.co.kr -- #
+# -- By liverpools@gmail.com -- #
 # -- On Apr 14, 2018 -- #
 
 source Libs
