@@ -1,6 +1,6 @@
-#!/bin/tcsh 
+#!/bin/csh 
 
-# -- By chb@mz.co.kr -- # 
+# -- By liverpools@gmail.com -- # 
 # -- On Mar 9, 2018 -- # 
 
 set CloudConfig = '/etc/cloud/cloud.cfg.d/00_defaults.cfg'
