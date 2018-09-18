@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# -- By chb@mz.co.kr -- # 
+# -- By liverpools@gmail.com -- # 
 # -- July 24, 2017 -- # 
 DomainName=$1 
 
