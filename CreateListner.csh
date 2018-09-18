@@ -1,4 +1,4 @@
-#!/bin/tcsh
+#!/bin/csh
 
 # -- By liverpools@gmail.com -- #
 # -- On Feb 26, 2018 -- #
