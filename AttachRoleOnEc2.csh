@@ -1,7 +1,7 @@
-#!/bin/tcsh 
+#!/bin/csh 
 
-# -- By chb@mz.co.kr -- # 
-# -- On,In,At Mar 01, 2018 -- # 
+# -- By liverpools@gmail.com -- # 
+# -- On Mar 01, 2018 -- # 
 
 source Libs 
 
