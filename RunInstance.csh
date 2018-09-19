@@ -1,6 +1,6 @@
 #!/bin/tcsh 
 
-# -- By chb@mz.co.kr -- # 
+# -- By liverpools@gmail.com -- # 
 # -- On Jan 2, 2018 -- # 
 
 source Libs 
