@@ -1,6 +1,6 @@
 #!/bin/csh
 
-# -- By chb@mz.co.kr -- #
+# -- By liverpools@gmail.com -- #
 # -- On Apr 15, 2018 -- #
 
 # -- Load the Libs -- #
